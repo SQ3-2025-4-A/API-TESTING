@@ -1,0 +1,19 @@
+{
+  "name": "api-testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SQ3-2025-4-A/API-TESTING.git"
+  },
+  "author": "Rubiana Perucci",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SQ3-2025-4-A/API-TESTING/issues"
+  },
+  "homepage": "https://github.com/SQ3-2025-4-A/API-TESTING#readme",
+  "description": ""
+}
