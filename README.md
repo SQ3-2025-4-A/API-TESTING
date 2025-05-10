@@ -9,7 +9,9 @@ API Testing Framework for Software Quality Engineering 3 - Jala University Brazi
 ## Usage
 1. Clone the repo
 2. Install dependencies:
-    `npm install`
+    ```console
+    npm install
+    ```
 
 3. To execute the scripts
 
