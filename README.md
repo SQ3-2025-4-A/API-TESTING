@@ -31,11 +31,13 @@ API Testing Framework for Software Quality Engineering 3 - Jala University Brazi
 ## Framework Stack
 - **Jest** as Test Runner
 - **Axios** to execute HTTP requests
+- **Joi** as schema validator
 - **Newman HTML Reporter** to execute and generate report for _Postman_ collections.
 
 
 ## References
 - [Jest](https://jestjs.io/docs/getting-started)
 - [Axios (npm)](https://www.npmjs.com/package/axios)
+- [Joi](https://joi.dev/api/?v=17.13.3)
 - [Newman (npm)](https://www.npmjs.com/package/newman)
 - [Newman HTML Reporter (github)](https://github.com/postmanlabs/newman-reporter-html)
