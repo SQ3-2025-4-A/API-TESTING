@@ -1,0 +1,5 @@
+{
+    "logger": "debug",
+    "environment": "test",
+    "timeout": 15000
+}
