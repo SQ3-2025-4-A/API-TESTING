@@ -47,7 +47,7 @@ This framework is built using the Three-Layered Archictecture.
 1. Clone the repo
 2. Install dependencies:
     ```console
-    npm install
+    $ npm install
     ```
 
 3. To execute the scripts
@@ -55,13 +55,20 @@ This framework is built using the Three-Layered Archictecture.
    a. Newman Reporter:
    
     ```console
-    npm run newman
+    $ npm run newman
     ```
 
    b. Jest tests:
       
     ```console
-    npm test    
+    $ npm test    
+    ```
+
+    c. Linter:
+      
+    ```console
+    $ npm run lint    
+    $ npm run lint-fix
     ```
     
 
@@ -72,6 +79,7 @@ This framework is built using the Three-Layered Archictecture.
 - **Winston** as logger
 - **jest-html-reports** NPM lib to generate the HMTL report from Jest tests
 - **Newman HTML Reporter** to execute and generate report for _Postman_ collections
+- **ESLint** as code linter
 
 
 
@@ -82,3 +90,4 @@ This framework is built using the Three-Layered Archictecture.
 - [Newman (npm)](https://www.npmjs.com/package/newman)
 - [Newman HTML Reporter (github)](https://github.com/postmanlabs/newman-reporter-html)
 - [Tri-Layer Architecture - Péter Földházi](https://www.pnsqc.org/docs/PROP53522057-FoldhaziDraftFinal.pdf)
+- [ESLint](https://eslint.org/docs/latest/use/getting-started)
