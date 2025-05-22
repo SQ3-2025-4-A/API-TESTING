@@ -8,8 +8,8 @@ const config = {
     "\\\\node_modules\\\\"
   ],
   moduleNameMapper: {
-    '^#core/(.*)$': '<rootDir>/core/$1',
-    '^#wrike/(.*)$': '<rootDir>/wrike/$1',
+    "^#core/(.*)$": "<rootDir>/core/$1",
+    "^#wrike/(.*)$": "<rootDir>/wrike/$1",
   },
   reporters: [
     "default",

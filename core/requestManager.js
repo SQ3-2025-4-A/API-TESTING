@@ -5,7 +5,7 @@ const logger = require("#core/logger");
 class RequestManager {
     constructor(baseURL, headers={}, timeout=configuration.timeout) {
         if (RequestManager._instance) { 
-            return RequestManager._instance 
+            return RequestManager._instance; 
         };
         RequestManager._instance = this;
 
@@ -28,7 +28,7 @@ class RequestManager {
             headers: headers
         });
         logger.info(`Request response data: ${JSON.stringify(response.data)}`);
-        return response
+        return response;
     }
 }
 
