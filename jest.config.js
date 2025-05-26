@@ -13,10 +13,9 @@ const config = {
   },
   reporters: [
     "default",
-    ["./node_modules/jest-html-reporters", {
+    ["./node_modules/jest-html-reporter", {
       "pageTitle": "Test Report - Wrike API",
-      "publicPath": "./reports",
-      "filename": "wrike-api-tests.html"
+      "outputPath": "./reports/wrike-api-tests.html"
     }]
   ],
   setupFilesAfterEnv: ["./core/jest.setup.js"]
