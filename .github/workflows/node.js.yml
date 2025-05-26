@@ -1,0 +1,42 @@
+name: Wrike API Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Replace env.json values with secrets
+        run: |
+          jq --arg base_url "${{ secrets.BASE_URL }}" \
+             --arg api_key "${{ secrets.API_KEY }}" \
+             '.test.base_url = $base_url | .test.api_key = $api_key' env.json > tmp.json && mv tmp.json env.json
+
+      - name: Run tests
+        run: npm test
+
+      - name: Archive test artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-artifacts
+          path: |
+            reports/*.html
+            reports/*.log

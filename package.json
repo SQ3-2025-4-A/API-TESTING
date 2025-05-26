@@ -6,7 +6,8 @@
     "test": "jest",
     "newman": "node newman/newman_reporter.js",
     "lint": "eslint . --ext .js",
-    "lint-fix": "eslint . --fix"
+    "lint-fix": "eslint . --fix",
+    "unit-test": "jest --testMatch=**/test/unit/*.spec.js --coverage --coverageReporters=text --reporters=default"
   },
   "repository": {
     "type": "git",

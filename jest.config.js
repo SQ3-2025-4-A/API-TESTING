@@ -1,8 +1,8 @@
 /** @type {import('jest').Config} */
+
 const config = {
   testMatch: [
-    "**/__tests__/**/*.[jt]s?(x)",
-    "**/?(*.)+(spec|test).[tj]s?(x)"
+    "**/*.test.js"
   ],
   testPathIgnorePatterns: [
     "\\\\node_modules\\\\"
@@ -16,7 +16,7 @@ const config = {
     ["./node_modules/jest-html-reporters", {
       "pageTitle": "Test Report - Wrike API",
       "publicPath": "./reports",
-      "filename": "jest-report-wrike-api.html"
+      "filename": "wrike-api-tests.html"
     }]
   ],
   setupFilesAfterEnv: ["./core/jest.setup.js"]
