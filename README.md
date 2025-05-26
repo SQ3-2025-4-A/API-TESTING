@@ -58,7 +58,7 @@ This framework is built using the Three-Layered Archictecture.
     $ npm run newman
     ```
 
-   b. Jest tests:
+   b. API Tests (Jest):
       
     ```console
     $ npm test    
@@ -71,13 +71,19 @@ This framework is built using the Three-Layered Archictecture.
     $ npm run lint-fix
     ```
     
+   d. Unit Tests:
+      
+    ```console
+    $ npm run unit-test    
+    ```
+    
 
 ## Framework Stack
 - **Jest** as Test Runner
 - **Axios** to execute HTTP requests
 - **Joi** as schema validator
 - **Winston** as logger
-- **jest-html-reports** NPM lib to generate the HMTL report from Jest tests
+- **jest-html-report** NPM lib to generate the HMTL report from Jest tests
 - **Newman HTML Reporter** to execute and generate report for _Postman_ collections
 - **ESLint** as code linter
 
