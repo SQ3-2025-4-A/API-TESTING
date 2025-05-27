@@ -1,4 +1,3 @@
-/* eslint-disable import/no-commonjs */
 import { defineConfig } from "eslint/config";
 import js from "@eslint/js";
 
