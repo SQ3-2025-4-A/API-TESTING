@@ -4,11 +4,17 @@ import js from "@eslint/js";
 export default defineConfig([
   {
     ignores: [
-      "node_modules/*",
-      "reports/*",
-      "**/newman/*",
-      "eslint.config.js"
+      "node_modules/**",
+      "reports/**",
+      "test/newman/**",
+      "eslint.config.js",
     ],
+    languageOptions: {
+      parserOptions: {
+        ecmaVersion: 2022,
+        sourceType: "unambiguous",
+      },
+    },
   },
   {
     files: ["**/*.js"],
@@ -17,6 +23,7 @@ export default defineConfig([
   },
   {
     rules: {
+      maxWarnings: 0,
       "no-unused-vars": "error",
       "no-undef": "off",
       quotes: ["error", "double"],
