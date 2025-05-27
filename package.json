@@ -5,8 +5,8 @@
   "scripts": {
     "test": "jest",
     "newman": "node newman/newman_reporter.js",
-    "lint": "eslint --config eslint.config.js .",
-    "lint-fix": "eslint --config eslint.config.js . --fix",
+    "lint": "eslint --config eslint.config.mjs .",
+    "lint-fix": "eslint --config eslint.config.mjs . --fix",
     "unit-test": "jest --testMatch=**/test/unit/*.spec.js --coverage --coverageReporters=text --reporters=default"
   },
   "repository": {
