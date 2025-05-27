@@ -24,6 +24,8 @@ export default defineConfig([
   {
     rules: {
       maxWarnings: 0,
+      "import/no-commonjs": "off",
+      "import/no-import-module-exports": "off",
       "no-unused-vars": "error",
       "no-undef": "off",
       quotes: ["error", "double"],
